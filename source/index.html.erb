@@ -1,10 +1,131 @@
----
-title: Le Wagon Middleman boilerplate
----
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/hell.jpg');">
+      <div class="banner-content">
+        <h1>Hello!</h1>
+        <p>Welcome to Hell paradise open 24/7</p>
+        <form class="form-inline">
+        <input type="text" class="form-control input-lg" placeholder="checkin">
+        <input type="text" class="form-control input-lg" placeholder="checkout">
+        <select name="" id="" class="form-control input-lg">
+            <option value="1">1 person</option>
+            <option value="2">2 persons</option>
+            <option value="3">3 persons</option>
+          </select>
+          <input type="submit" class="btn btn-primary btn-lg" placeholder="Book your Inferno trip">
+          </form>
+
+      </div>
+    </div>
+
+    <!-- Your features code -->
+  <div class="container padded text-center">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= image_tag "images/globe.png"%>
+          <h2>Discover the best infernos!</h2>
+          <p>Hell is the best place to stay</p>
+      </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= image_tag "images/dollar.png"%>
+          <h2>Free! We don't need money</h2>
+          <p>Your life will be enough</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= image_tag "images/beer.png"%>
+          <h2>Party everyday and unlimited booze</h2>
+          <p>So you can enjoy also</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= image_tag "images/heart.png"%>
+          <h2>Love at every corner</h2>
+          <p>Isn't is nice?</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="wrapper-grey padded">
+      <div class="container">
+        <h2>Choose the demon of your choice</h2>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="card" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/hellgate.jpg');">
+                  <div class="card-category">Eternalia</div>
+                    <div class="card-description">
+                      <h3> Crkus the crazy home</h3>
+                        <p>Torture everyday from 7 am to midnight</p>
+                    </div>
+                    <%= image_tag "images/demoniac.jpg", class: "card-user avatar avatar-large" %>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="card" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/hellgate2.jpg');">
+                  <div class="card-category">Deatherminal</div>
+                    <div class="card-description">
+                      <h3> Morawo stairway to despair</h3>
+                        <p>Being hunted all day long</p>
+                    </div>
+                    <%= image_tag "images/demoniac2.jpg", class: "card-user avatar avatar-large" %>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="card" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/hellgate3.jpg');">
+                  <div class="card-category">Labyrinthomania</div>
+                    <div class="card-description">
+                      <h3>Bugly the vicious</h3>
+                        <p>Poisons and illusions</p>
+                    </div>
+                    <img class="card-user avatar avatar-large" src="images/demoniac3.jpg">
+                    <%= image_tag "images/demoniac3.jpg", class: "card-user avatar avatar-large" %>
+              </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+    <!-- Your newsletter code -->
+
+    <div class="text-center padded" id="newsletter">
+      <h2>Leave your email if you want to get a chance to enter this paradise</h2>
+      <p> We'll even leave a note for your family when you disapear </p>
+      <form>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        <input type="submit" value="Subscribe" class="btn btn-primary">
+      </form>
+
+    </div>
+
+    <!-- Your map code -->
+
+      <div id="map" style="width: 100%; height: 400px;"></div>
+
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+      <script type="text/javascript">
+      var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+      var myOptions = {
+        zoom: 16,
+        center: myLatlng,
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+      };
+
+      var map = new google.maps.Map(document.getElementById('map'), myOptions);
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: "You are here!"
+      });
+      </script>
+
+
+    <!-- Your footer code -->
+
