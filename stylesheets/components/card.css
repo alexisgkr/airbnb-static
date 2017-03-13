@@ -1,0 +1,43 @@
+/* Card design */
+/* line 3, /Users/alexisgerome/code/alexisgkr/airbnb-static/source/stylesheets/components/card.scss */
+.card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative; }
+
+/* line 10, /Users/alexisgerome/code/alexisgkr/airbnb-static/source/stylesheets/components/card.scss */
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+
+/* line 15, /Users/alexisgerome/code/alexisgkr/airbnb-static/source/stylesheets/components/card.scss */
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+/* line 22, /Users/alexisgerome/code/alexisgkr/airbnb-static/source/stylesheets/components/card.scss */
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; }
+
+/* line 28, /Users/alexisgerome/code/alexisgkr/airbnb-static/source/stylesheets/components/card.scss */
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0; }
+
+/* line 38, /Users/alexisgerome/code/alexisgkr/airbnb-static/source/stylesheets/components/card.scss */
+.card-link:hover {
+  opacity: 0.1; }
